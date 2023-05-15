@@ -1,0 +1,71 @@
+$global-font-color-light: rgb(207, 207, 207);
+$global-font-color-dark: rgb(0, 0, 0, .8);
+$global-font-color-link: rgb(22, 119, 255);
+
+$global-font-weight-title: 700;
+$global-font-weight-paragraph: 400;
+
+$global-font-size-paragraph: 18px;
+$global-font-size-sub-paragraph: 14.5px;
+
+$global-font-height-paragraph: 27px;
+$global-font-height-paragraph-title: 18px;
+$global-font-height-sub-paragraph: 21.5px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #FFFFFF;
+
+    .paragraph-title {
+        font-size: $global-font-size-paragraph;
+        font-weight: $global-font-weight-title;
+        color: $global-font-color-dark;
+        line-height: $global-font-height-paragraph-title;
+    }
+
+    .paragraph {
+        font-size: $global-font-size-paragraph;
+        font-weight: $global-font-weight-paragraph;
+        color: $global-font-color-dark;
+        line-height: $global-font-height-paragraph;
+    }
+
+    .link {
+        font-size: $global-font-size-sub-paragraph;
+        font-weight: $global-font-weight-paragraph;
+        color: $global-font-color-link;
+        line-height: $global-font-height-paragraph;
+    }
+
+    .sub-paragraph {
+        font-size: $global-font-size-sub-paragraph;
+        font-weight: $global-font-weight-paragraph;
+        color: $global-font-color-dark;
+        line-height: $global-font-height-sub-paragraph;
+    }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    * {
+        background-color: #FFFFFF;
+
+        .paragraph-title, .paragraph, .sub-paragraph {
+            color: $global-font-color-dark;
+        }
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    * {
+        background-color: #1e1e1e;
+
+        .paragraph-title, .paragraph, .sub-paragraph {
+            color: $global-font-color-light;
+        }
+    }
+}

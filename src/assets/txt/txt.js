@@ -1,0 +1,1 @@
+export const txt = {"key":{"key":"key","RU":"RU","EN":"EN"},"RU":{"key":"RU","RU":"русский","EN":"russian"},"EN":{"key":"EN","RU":"английский","EN":"english"}}
