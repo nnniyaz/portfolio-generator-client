@@ -1,13 +1,13 @@
 import React from 'react';
+import Layout from "./components/Layouts/Layout";
 import AppRouter from "./components/AppRouter";
-import MainLayout from "./components/Layouts/PublicLayout";
 import './App.scss';
 
 function App() {
     return (
-        <MainLayout>
+        <Layout>
             <AppRouter/>
-        </MainLayout>
+        </Layout>
     );
 }
 

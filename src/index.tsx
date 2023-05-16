@@ -13,15 +13,15 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-
+    // <React.StrictMode>
+    <React.Fragment>
         {/* If there is no i18n csv file */}
         {isTxtEmpty && (404)}
-
         <Provider store={store}>
             <BrowserRouter>
                 <App/>
             </BrowserRouter>
         </Provider>
-    </React.StrictMode>
+    </React.Fragment>
+    // </React.StrictMode>
 );

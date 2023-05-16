@@ -2,6 +2,7 @@ import React from 'react';
 import {Routes, Route, Navigate, useLocation} from "react-router-dom";
 import {publicRoutes, RouteNames} from "../routes";
 import {useTypedSelector} from "../hooks/useTypedSelector";
+import PublicLayout from "./Layouts/PublicLayout";
 
 const AppRouter = () => {
     const location = useLocation();
@@ -26,8 +27,11 @@ const AppRouter = () => {
             </Routes>
             :
             <Routes>
-                {publicRoutes.map(route => <Route path={route.path} element={<route.component/>} key={route.path}/>)}
-                <Route path={'*'} element={<Navigate to={from()}/>}/>
+                <Route element={<PublicLayout/>}>
+                    {publicRoutes.map(route => <Route path={route.path} element={<route.component/>}
+                                                      key={route.path}/>)}
+                    <Route path={'*'} element={<Navigate to={from()}/>}/>
+                </Route>
             </Routes>
     );
 };

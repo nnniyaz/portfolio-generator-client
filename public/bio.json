@@ -1,0 +1,16 @@
+{
+  "data": {
+    "avatar": "",
+    "email": "nassyrovich@gmail.com",
+    "fullName": {
+      "RU": "Нияз Насыров",
+      "EN": "Niyaz Nassyrov"
+    },
+    "bio": {
+      "RU": "Нияз Насыров",
+      "EN": "Niyaz Nassyrov"
+    }
+  },
+  "success": true,
+  "message": "OK"
+}

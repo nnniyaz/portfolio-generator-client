@@ -1,5 +1,5 @@
-import {SetIsAuthAction, UserActionsEnum} from "./types";
+import {SetIsAuthAction, UserActionEnum} from "./types";
 
 export const UserActionCreators = {
-    setIsAuth: (isAuth: boolean): SetIsAuthAction => ({type: UserActionsEnum.SET_IS_AUTH, payload: isAuth}),
+    setAuth: (isAuth: boolean): SetIsAuthAction => ({type: UserActionEnum.SET_IS_AUTH, payload: isAuth}),
 }
