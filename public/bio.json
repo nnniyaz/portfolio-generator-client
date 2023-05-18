@@ -2,14 +2,34 @@
   "data": {
     "avatar": "",
     "email": "nassyrovich@gmail.com",
-    "fullName": {
+    "fullName":  {
       "RU": "Нияз Насыров",
       "EN": "Niyaz Nassyrov"
     },
     "bio": {
-      "RU": "Нияз Насыров",
-      "EN": "Niyaz Nassyrov"
-    }
+      "paragraph-1": {
+        "RU": "Нияз Насыров",
+        "EN": "Niyaz Nassyrov"
+      },
+      "paragraph-2": {
+        "RU": "Нияз Насыров",
+        "EN": "Niyaz Nassyrov"
+      },
+      "paragraph-3": {
+        "RU": "Нияз Насыров",
+        "EN": "Niyaz Nassyrov"
+      }
+    },
+    "socials": {
+      "github": {
+        "link": "",
+        "label": {
+          "RU": "Гитхаб",
+          "EN": "Github"
+        }
+      }
+    },
+    "established": 2023
   },
   "success": true,
   "message": "OK"

@@ -30,11 +30,13 @@
     "dotenv-cli": "^7.2.1"
   },
   "scripts": {
-    "i18n": "node src/assets/txt/txtGen.js",
+    "i18n": "node src/ui/react/assets/txt/txtGen.js",
     "start": "concurrently \"npm run i18n\" \"react-scripts start\"",
     "build": "echo \"Please use build:dev or build:prod \" && exit 1",
     "build:dev": "dotenv -e .env.development concurrently \"npm run i18n\" \"react-scripts build\"",
-    "build:prod": "dotenv -e .env.production concurrently \"npm run i18n\" \"react-scripts build\""
+    "build:prod": "dotenv -e .env.production concurrently \"npm run i18n\" \"react-scripts build\"",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
