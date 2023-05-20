@@ -1,12 +1,12 @@
 import {SetProfile, ProfileActionsEnum, SetIsLoadingGetProfile} from "./types";
-import {IProfile} from "../../../../models/IProfile";
+import {Profile} from "../../../../domain/profile";
 import {AppDispatch} from "../../index";
-import ProfileApi from "../../../api/profileApi";
+import ProfileApi from "../../../http/profileApi";
 import {isEmpty} from "lodash";
 import {log} from "../../../../utils/log";
 
 export const ProfileActionCreators = {
-    setProfile: (profile: IProfile): SetProfile => ({
+    setProfile: (profile: Profile): SetProfile => ({
         type: ProfileActionsEnum.SET_PROFILE,
         payload: profile
     }),

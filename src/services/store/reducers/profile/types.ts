@@ -1,7 +1,7 @@
-import {IProfile} from "../../../../models/IProfile";
+import {Profile} from "../../../../domain/profile";
 
 export interface ProfileState {
-    profile: IProfile;
+    profile: Profile;
     isLoadingGetProfile: boolean;
 }
 
@@ -12,7 +12,7 @@ export enum ProfileActionsEnum {
 
 export interface SetProfile {
     type: ProfileActionsEnum.SET_PROFILE,
-    payload: IProfile
+    payload: Profile
 }
 
 export interface SetIsLoadingGetProfile {

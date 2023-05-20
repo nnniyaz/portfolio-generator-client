@@ -1,5 +1,5 @@
-import {LangsList} from "../../../../models/IMlString";
 import {SetCurrentLangAction, SystemActionsEnum} from "./types";
+import {LangsList} from "../../../../domain/base/lang";
 
 export const SystemActionCreators = {
     setCurrentLang: (lang: LangsList): SetCurrentLangAction => ({
