@@ -1,59 +1,34 @@
 {
   "data": {
-    "avatar": "https://media.licdn.com/dms/image/D4D03AQE9BfoGaWg4ZQ/profile-displayphoto-shrink_800_800/0/1680537159925?e=2147483647&v=beta&t=2GP-PZDV8K2RnIg0NqOFysZpifLG9pOU4abPqnZ7vho",
+    "avatar": "",
     "email": "nassyrovich@gmail.com",
-    "fullName": {
+    "fullName":  {
       "RU": "Нияз Насыров",
       "EN": "Niyaz Nassyrov"
     },
     "bio": {
       "paragraph-1": {
-        "RU": "Разработчик из Казахстана \uD83C\uDDF0\uD83C\uDDFF",
-        "EN": "Hi, I'm a web-developer from Kazakhstan \uD83C\uDDF0\uD83C\uDDFF"
+        "RU": "Нияз Насыров",
+        "EN": "Niyaz Nassyrov"
       },
       "paragraph-2": {
-        "RU": "Помогаю клиентам превращать идеи в сайты и приложения. Довожу проекты до конца и помогаю запускать их в срок. Пишу код сам и управляю командной разработкой. Поддерживаю и развиваю продукты компаний и собственные проекты.",
-        "EN": "I help clients turn ideas into websites and applications and help get their projects up and running on time. I write code and manage developer teams, maintain and develop companies' products and my own projects."
+        "RU": "Нияз Насыров",
+        "EN": "Niyaz Nassyrov"
       },
       "paragraph-3": {
-        "RU": "Собираю опыт в блоге и рассказываю о процессе и результатах работы. Рассказываю о технических задачах и их возможных решениях. Уделяю внимание архитектуре и расширяемости кода. Кроме разработки, пишу о дизайне, управлении и прочитанных книгах.",
-        "EN": "I collect experience in my blog and write about the process and results of my work, explain various technical problems and their possible solutions with attention to architecture and code extensibility. In addition to development, I write about design, management, and books I've read."
-      },
-      "paragraph-4": {
-        "RU": "В свободное время я работаю над своими проектами. Также, мне очень нравится изучать практики других проектов и внедрять их в свои.",
-        "EN": "In my free time, I work on my own projects. I also love to learn from other projects and implement their practices in my own."
+        "RU": "Нияз Насыров",
+        "EN": "Niyaz Nassyrov"
       }
     },
-    "socials": [
-      {
-        "link": "mailto:nassyrovich@gmail.com",
-        "label": {
-          "RU": "Почта",
-          "EN": "Email"
-        }
-      },
-      {
-        "link": "https://t.me/nassyrovich",
-        "label": {
-          "RU": "Телеграм",
-          "EN": "Telegram"
-        }
-      },
-      {
-        "link": "https://github.com/nnniyaz",
+    "socials": {
+      "github": {
+        "link": "",
         "label": {
           "RU": "Гитхаб",
           "EN": "Github"
         }
-      },
-      {
-        "link": "https://www.linkedin.com/in/niyaz-nassyrov-b35205200/",
-        "label": {
-          "RU": "Линкедин",
-          "EN": "Linkedin"
-        }
       }
-    ],
+    },
     "established": 2023
   },
   "success": true,

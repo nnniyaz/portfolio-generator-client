@@ -1,5 +1,5 @@
 import {SystemAction, SystemActionsEnum, SystemState} from "./types";
-import {LangsList} from "../../../../domain/base/lang";
+import {LangsList} from "../../../../models/IMlString";
 
 const initialState: SystemState = {
     currentLang: LangsList.RU,

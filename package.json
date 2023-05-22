@@ -8,7 +8,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.11.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
     "sass": "^1.62.1",
@@ -30,7 +30,7 @@
     "dotenv-cli": "^7.2.1"
   },
   "scripts": {
-    "i18n": "node src/ui/assets/txt/txtGen.js",
+    "i18n": "node src/ui/react/assets/txt/txtGen.js",
     "start": "concurrently \"npm run i18n\" \"react-scripts start\"",
     "build": "echo \"Please use build:dev or build:prod \" && exit 1",
     "build:dev": "dotenv -e .env.development concurrently \"npm run i18n\" \"react-scripts build\"",

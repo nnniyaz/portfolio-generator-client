@@ -1,0 +1,142 @@
+$global-background-color-light: #FFFFFF;
+$global-background-color-dark: #1E1E1E;
+
+$global-font-color-light: rgb(207, 207, 207);
+$global-font-color-dark: rgb(0, 0, 0, .8);
+$global-font-color-link: #0064A8;
+
+$global-font-color-hover: #a03000;
+
+$global-font-weight-title: 700;
+$global-font-weight-paragraph: 400;
+
+$global-font-size-header: 45px;
+$global-font-size-sub-header: 27px;
+$global-font-size-paragraph: 18px;
+$global-font-size-sub-paragraph: 14.5px;
+
+$global-font-height-header: 52px;
+$global-font-height-sub-header: 36px;
+$global-font-height-paragraph: 27px;
+$global-font-height-paragraph-title: 18px;
+$global-font-height-sub-paragraph: 21.5px;
+
+$global-text-decoration-line: underline;
+$global-text-decoration-style: solid;
+$global-text-decoration-color-light: rgba(255, 255, 255, 0.2);
+$global-text-decoration-color-dark: rgba(0, 0, 0, 0.2);
+$global-text-decoration-thickness: .5px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Display', sans-serif;
+  background-color: $global-background-color-light;
+
+  .text-decoration {
+    text-decoration-line: $global-text-decoration-line;
+    text-decoration-style: $global-text-decoration-style;
+    text-decoration-color: $global-text-decoration-color-dark;
+    text-decoration-thickness: $global-text-decoration-thickness;
+  }
+
+  .header {
+    font-size: $global-font-size-header;
+    font-weight: $global-font-weight-title;
+    color: $global-font-color-dark;
+    line-height: $global-font-height-header;
+  }
+
+  .sub-header {
+    @extend .header;
+    font-size: $global-font-size-sub-header !important;
+    line-height: $global-font-height-sub-header !important;
+    @extend .text-decoration;
+  }
+
+  .paragraph-title {
+    font-size: $global-font-size-paragraph;
+    font-weight: $global-font-weight-title;
+    color: $global-font-color-dark;
+    line-height: $global-font-height-paragraph-title;
+  }
+
+  .paragraph-title-link {
+    @extend .paragraph-title;
+    @extend .text-decoration;
+
+    &:hover {
+      color: $global-font-color-hover !important;
+      text-decoration-color: $global-font-color-hover !important;
+    }
+  }
+
+  .paragraph {
+    font-size: $global-font-size-paragraph;
+    font-weight: $global-font-weight-paragraph;
+    color: $global-font-color-dark;
+    line-height: $global-font-height-paragraph;
+  }
+
+  .link {
+    @extend .paragraph;
+    color: $global-font-color-link !important;
+    @extend .text-decoration;
+    text-decoration-color: $global-font-color-link !important;
+    cursor: pointer;
+
+    &:hover {
+      color: $global-font-color-hover !important;
+      text-decoration-color: $global-font-color-hover !important;
+    }
+  }
+
+  .link-active {
+    @extend .link;
+    color: $global-font-color-dark !important;
+    @extend .text-decoration;
+  }
+
+  .sub-paragraph {
+    font-size: $global-font-size-sub-paragraph;
+    font-weight: $global-font-weight-paragraph;
+    color: $global-font-color-dark;
+    line-height: $global-font-height-sub-paragraph;
+  }
+
+  .sub-paragraph-link {
+    @extend .sub-paragraph;
+    @extend .text-decoration;
+    cursor: pointer;
+
+    &:hover {
+      color: $global-font-color-hover !important;
+      text-decoration-color: $global-font-color-hover !important;
+    }
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  * {
+    background-color: $global-background-color-light;
+
+    .header, .sub-header, .paragraph-title, .paragraph, .link-active, .sub-paragraph, .sub-paragraph-link {
+      color: $global-font-color-dark;
+      text-decoration-color: $global-text-decoration-color-dark;
+    }
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  * {
+    background-color: $global-background-color-dark;
+
+    .header, .sub-header, .paragraph-title, .paragraph, .link-active, .sub-paragraph, .sub-paragraph-link {
+      color: $global-font-color-light;
+      text-decoration-color: $global-text-decoration-color-light;
+    }
+  }
+}

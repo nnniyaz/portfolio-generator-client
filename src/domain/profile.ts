@@ -1,13 +1,10 @@
+import {MlString} from "./base/mlString";
 import {Bio} from "./base/bio";
 import {Social} from "./base/social";
-import {MlString} from "./base/mlString";
 
 export type ProfileEstablishedYear = number;
-
-export type ProfileId = UniqueId;
-
 export type Profile = {
-    id: ProfileId;
+    id: UniqueId;
     avatar: Link;
     fullName: MlString;
     bio: Bio;

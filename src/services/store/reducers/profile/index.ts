@@ -1,8 +1,8 @@
 import {ProfileAction, ProfileActionsEnum, ProfileState} from "./types";
-import {Profile} from "../../../../domain/profile";
+import {IProfile} from "../../../../models/IProfile";
 
 const initialState: ProfileState = {
-    profile: {} as Profile,
+    profile: {} as IProfile,
     isLoadingGetProfile: false,
 }
 

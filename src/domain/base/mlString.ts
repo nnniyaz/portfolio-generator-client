@@ -1,3 +1,6 @@
-import {LangsList} from "./lang";
+export enum LangsList {
+    RU = "RU",
+    EN = "EN",
+}
 
-export type MlString = Record<LangsList, string>
+export type MlString = Record<LangsList, Translate>;
