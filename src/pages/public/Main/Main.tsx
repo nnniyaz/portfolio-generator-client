@@ -1,9 +1,9 @@
 import React from "react";
-import {styles} from "../../../assets/styles/styles";
-import {txt} from "../../../assets/txt/txt";
+import {styles} from "shared/assets/styles/styles";
+import {txt} from "shared/assets/txt/txt";
 import {isEmpty} from "lodash";
-import {useTypedSelector} from "../../../hooks/useTypedSelector";
-import {Loading} from "../../../components/Loading";
+import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
+import {Loading} from "shared/ui/Loading";
 import classes from "./Main.module.scss";
 
 export function Main() {
@@ -23,7 +23,7 @@ export function Main() {
             {
                 isLoadingGetProfile
                     ?
-                    <Loading width={"100%"} height={"calc(100vh - 153px)"}/>
+                    <Loading/>
                     :
                     <div className={classes.container}>
 
