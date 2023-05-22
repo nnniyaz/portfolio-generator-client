@@ -1,11 +1,11 @@
 import React from "react";
-import Main from "../pages/public/Main";
-import Projects from "../pages/public/Projects";
-import Blog from "../pages/public/Blog";
-import Research from "../pages/public/Research";
-import Favourites from "../pages/public/Favourites";
-import {MlString} from "../models/IMlString";
+import {MlString} from "../models/base/mlString";
 import {txt} from "../assets/txt/txt";
+import {Main} from "../pages/public/Main";
+import {Projects} from "../pages/public/Projects";
+import {Blog} from "../pages/public/Blog";
+import {Research} from "../pages/public/Research";
+import {Favourites} from "../pages/public/Favourites";
 
 interface IRoute {
     path: string;
@@ -14,11 +14,11 @@ interface IRoute {
 }
 
 export enum RouteNames {
-    MAIN = '/',
-    PROJECTS = '/projects',
-    BLOG = '/blog',
-    ARTICLES = '/articles',
-    FAVOURITES = '/favourites',
+    MAIN = "/",
+    PROJECTS = "/projects",
+    BLOG = "/blog",
+    ARTICLES = "/articles",
+    FAVOURITES = "/favourites",
 }
 
 export const publicRoutes: IRoute[] = [

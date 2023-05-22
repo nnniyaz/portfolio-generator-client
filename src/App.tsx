@@ -1,12 +1,15 @@
-import React from 'react';
-import Layout from "./components/Layouts/Layout";
-import AppRouter from "./components/AppRouter";
-import './App.scss';
+import React, {Suspense} from "react";
+import {Layout} from "./components/Layouts/Layout";
+import {Routing} from "./components/Routing";
+import "./App.scss";
+import {Loading} from "./components/Loading";
 
 function App() {
     return (
         <Layout>
-            <AppRouter/>
+            <Suspense fallback={<Loading/>}>
+                <Routing/>
+            </Suspense>
         </Layout>
     );
 }

@@ -3,4 +3,4 @@ export enum LangsList {
     EN = "EN",
 }
 
-export type MlString = Record<LangsList, string>;
+export type MlString = Record<LangsList, Translate>;

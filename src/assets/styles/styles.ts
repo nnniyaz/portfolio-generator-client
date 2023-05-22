@@ -1,6 +1,6 @@
 export const styles = {
-    header: "header",
-    subHeader: "sub-header",
+    heading: "heading",
+    subHeading: "sub-heading",
     paragraphTitle: "paragraph-title",
     paragraphTitleLink: "paragraph-title-link",
     paragraph: "paragraph",

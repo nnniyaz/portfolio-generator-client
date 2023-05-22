@@ -1,11 +1,11 @@
 import {AxiosResponse} from "axios";
-import {IResponse} from "../models/IResponse";
+import {Response} from "../models/response/response";
 import {$api} from "./index";
 import {ApiRoutes} from "./api-routes/ApiRoutes";
-import {IProfile} from "../models/IProfile";
+import {Profile} from "../models/profile";
 
 export default class ProfileApi {
-    static async getProfile(controller: AbortController): Promise<AxiosResponse<IResponse<IProfile>>> {
-        return $api.get<IResponse<IProfile>>(ApiRoutes.PROFILE, {signal: controller.signal});
+    static async getProfile(controller: AbortController): Promise<AxiosResponse<Response<Profile>>> {
+        return $api.get<Response<Profile>>(ApiRoutes.PROFILE, {signal: controller.signal});
     }
 }

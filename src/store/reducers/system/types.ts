@@ -1,4 +1,4 @@
-import {LangsList} from "../../../models/IMlString";
+import {LangsList} from "../../../models/base/mlString";
 
 export interface SystemState {
     currentLang: LangsList;

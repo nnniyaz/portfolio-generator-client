@@ -1,7 +1,7 @@
-import React, {ReactNode} from 'react';
-import classes from "./index.module.scss";
+import React, {ReactNode} from "react";
+import classes from "./Layout.module.scss";
 
-const Layout = ({children}: { children: ReactNode }) => {
+export function Layout({children}: { children: ReactNode }) {
     return (
         <div className={classes.layout}>
             <div className={classes.layout__container}>
@@ -9,6 +9,4 @@ const Layout = ({children}: { children: ReactNode }) => {
             </div>
         </div>
     );
-};
-
-export default Layout;
+}
