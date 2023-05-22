@@ -20,7 +20,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/compose-function": "^0.0.30",
     "@types/jest": "^27.5.2",
     "@types/lodash": "^4.14.194",
     "@types/node": "^16.18.30",
@@ -31,7 +30,7 @@
     "dotenv-cli": "^7.2.1"
   },
   "scripts": {
-    "i18n": "node ui/assets/txt/txtGen.js",
+    "i18n": "node src/ui/assets/txt/txtGen.js",
     "start": "concurrently \"npm run i18n\" \"react-scripts start\"",
     "build": "echo \"Please use build:dev or build:prod \" && exit 1",
     "build:dev": "dotenv -e .env.development concurrently \"npm run i18n\" \"react-scripts build\"",
