@@ -1,0 +1,177 @@
+@import "./vars";
+
+.text-decoration {
+  text-decoration-line: $global-text-decoration-line;
+  text-decoration-style: $global-text-decoration-style;
+  text-decoration-color: $global-text-decoration-color-dark;
+  text-decoration-thickness: $global-text-decoration-thickness;
+}
+
+.heading {
+  font-size: $global-font-size-heading;
+  font-weight: $global-font-weight-title;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-heading;
+}
+
+.sub-heading {
+  font-size: $global-font-size-sub-heading;
+  font-weight: $global-font-weight-title;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-sub-heading;
+  @extend .text-decoration;
+}
+
+.paragraph-title {
+  font-size: $global-font-size-paragraph;
+  font-weight: $global-font-weight-title;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-paragraph-title;
+}
+
+.paragraph-title-link {
+  font-size: $global-font-size-paragraph;
+  font-weight: $global-font-weight-title;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-paragraph-title;
+  @extend .text-decoration;
+
+  &:hover {
+    color: $global-font-color-hover !important;
+    text-decoration-color: $global-font-color-hover !important;
+  }
+}
+
+.paragraph {
+  font-size: $global-font-size-paragraph;
+  font-weight: $global-font-weight-paragraph;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-paragraph;
+  letter-spacing: 1px;
+}
+
+.link {
+  font-size: $global-font-size-paragraph;
+  font-weight: $global-font-weight-paragraph;
+  line-height: $global-font-height-paragraph;
+  color: $global-font-color-link;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  @extend .text-decoration;
+  text-decoration-color: $global-font-color-link;
+
+  &:hover {
+    color: $global-font-color-hover;
+    text-decoration-color: $global-font-color-hover;
+  }
+}
+
+.link-active {
+  font-size: $global-font-size-paragraph;
+  font-weight: $global-font-weight-paragraph;
+  line-height: $global-font-height-paragraph;
+  color: $global-font-color-dark;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  @extend .text-decoration;
+
+  &:hover {
+    color: $global-font-color-hover;
+    text-decoration-color: $global-font-color-hover;
+  }
+}
+
+.sub-paragraph {
+  font-size: $global-font-size-sub-paragraph;
+  font-weight: $global-font-weight-paragraph;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-sub-paragraph;
+}
+
+.sub-paragraph-link {
+  font-size: $global-font-size-sub-paragraph;
+  font-weight: $global-font-weight-paragraph;
+  color: $global-font-color-dark;
+  line-height: $global-font-height-sub-paragraph;
+  @extend .text-decoration;
+  cursor: pointer;
+
+  &:hover {
+    color: $global-font-color-hover;
+    text-decoration-color: $global-font-color-hover;
+  }
+}
+
+/* Mobile Sizes */
+@media (max-width: 1340px) {
+  .heading {
+    font-size: $global-mobile-font-size-heading;
+    line-height: $global-mobile-font-height-heading;
+  }
+
+  .sub-heading {
+    font-size: $global-mobile-font-size-sub-heading;
+    line-height: $global-mobile-font-height-sub-heading;
+  }
+
+  .paragraph-title {
+    font-size: $global-mobile-font-size-paragraph;
+    line-height: $global-mobile-font-height-paragraph-title;
+  }
+
+  .paragraph-title-link {
+    font-size: $global-mobile-font-size-paragraph;
+    line-height: $global-mobile-font-height-paragraph-title;
+  }
+
+  .paragraph {
+    font-size: $global-mobile-font-size-paragraph;
+    line-height: $global-mobile-font-height-paragraph;
+  }
+
+  .link {
+    font-size: $global-mobile-font-size-paragraph;
+    line-height: $global-mobile-font-height-paragraph;
+  }
+
+  .link-active {
+    font-size: $global-mobile-font-size-paragraph;
+    line-height: $global-mobile-font-height-paragraph;
+  }
+
+  .sub-paragraph {
+    font-size: $global-mobile-font-size-sub-paragraph;
+    line-height: $global-mobile-font-height-sub-paragraph;
+  }
+
+  .sub-paragraph-link {
+    font-size: $global-mobile-font-size-sub-paragraph;
+    line-height: $global-mobile-font-height-sub-paragraph;
+  }
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  .heading, .sub-heading, .paragraph-title, .paragraph, .link-active, .sub-paragraph, .sub-paragraph-link {
+    color: $global-font-color-dark;
+    text-decoration-color: $global-text-decoration-color-dark;
+  }
+
+  li {
+    color: $global-font-color-dark;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .heading, .sub-heading, .paragraph-title, .paragraph, .link-active, .sub-paragraph, .sub-paragraph-link {
+    color: $global-font-color-light;
+    text-decoration-color: $global-text-decoration-color-light;
+  }
+
+  li {
+    color: $global-font-color-light;
+  }
+}
