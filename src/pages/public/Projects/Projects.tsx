@@ -1,12 +1,12 @@
 import React from "react";
-import {styles} from "shared/assets/styles/styles";
 import {txt} from "shared/assets/txt/txt";
+import {styles} from "shared/assets/styles/styles";
 import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
+import {ProjectsList} from "../../../widgets/ProjectsList";
 import classes from "./Projects.module.scss";
 
 export function Projects() {
     const {currentLang} = useTypedSelector(state => state.system);
-    const {} = useTypedSelector(state => state);
 
     return (
         <div className={classes.main}>
@@ -16,9 +16,7 @@ export function Projects() {
                     <div className={styles.paragraph}>{txt.projects_text[currentLang]}</div>
                 </div>
 
-                <div className={classes.container__body}>
-
-                </div>
+                <ProjectsList/>
             </div>
         </div>
     );

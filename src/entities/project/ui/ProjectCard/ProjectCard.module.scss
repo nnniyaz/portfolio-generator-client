@@ -1,0 +1,87 @@
+@import "src/app";
+
+.project {
+  width: calc((100% - 60px) / 4);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 15px;
+  text-decoration: none;
+
+  &:hover {
+    .project__title {
+      > div {
+        color: $global-font-color-hover;
+      }
+    }
+  }
+
+  .project__preview {
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project__preview__text {
+      text-transform: uppercase;
+      font-family: "JetBrainsMono Nerd Font", monospace;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: $global-font-color-dark;
+      background-color: transparent;
+    }
+  }
+
+  .project__title {
+    width: 100%;
+  }
+
+  .project__description {
+    width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .project {
+    .project__preview {
+      background-color: $global-font-color-dark;
+
+      .project__preview__text {
+        color: $global-font-color-light;
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .project {
+    .project__preview {
+      background-color: $global-font-color-light;
+
+      .project__preview__text {
+        color: $global-font-color-dark;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .project {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+@media (max-width: 860px) {
+  .project {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .project {
+    width: 100%;
+  }
+}

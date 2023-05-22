@@ -1,10 +1,10 @@
 import React from "react";
 import {Routes, Route, Navigate, useLocation} from "react-router-dom";
 import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
-import {PublicLayout} from "widgets/PublicLayout";
 import {MlString} from "entities/base/mlString";
 import {txt} from "shared/assets/txt/txt";
-import {Main} from "./public/Main";
+import {PublicLayout} from "./layouts/PublicLayout";
+import {Profile} from "./public/Profile";
 import {Projects} from "./public/Projects";
 import {Blog} from "./public/Blog";
 import {Research} from "./public/Research";
@@ -25,7 +25,7 @@ export enum RouteNames {
 }
 
 export const publicRoutes: IRoute[] = [
-    {path: RouteNames.MAIN, component: Main, name: txt.main},
+    {path: RouteNames.MAIN, component: Profile, name: txt.main},
     {path: RouteNames.PROJECTS, component: Projects, name: txt.projects},
     {path: RouteNames.BLOG, component: Blog, name: txt.blog},
     {path: RouteNames.ARTICLES, component: Research, name: txt.articles},

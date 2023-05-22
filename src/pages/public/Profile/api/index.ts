@@ -1,6 +1,6 @@
 import {AxiosResponse} from "axios";
 import {Response} from "../../../../entities/response/response";
-import {Profile} from "../../../../entities/profile";
+import {Profile} from "../../../../entities/profile/profile";
 import {$api} from "../../../../shared/api";
 import {ApiRoutes} from "../../../../shared/api/api-routes/ApiRoutes";
 

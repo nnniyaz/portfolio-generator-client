@@ -1,7 +1,12 @@
-import {MlString} from "./base/mlString";
+import {MlString} from "../base/mlString";
+
+export type ProjectData = {
+    projectsCount: number;
+    projects: Project[];
+}
 
 export type ProjectPreviewImageUrl = string;
-export type Projects = {
+export type Project = {
     id: UniqueId;
     previewImageUrl: ProjectPreviewImageUrl;
     title: MlString;

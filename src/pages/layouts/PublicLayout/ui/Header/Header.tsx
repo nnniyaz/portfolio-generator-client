@@ -1,12 +1,12 @@
 import React from "react";
 import {Link, useLocation} from "react-router-dom";
-import {publicRoutes, RouteNames} from "app/providers";
+import {publicRoutes, RouteNames} from "pages/index";
 import {styles} from "shared/assets/styles/styles";
 import {LangsList} from "entities/base/mlString";
 import AvatarPlaceholder from "./assets/imgs/avatar-placeholder.png";
 import classes from "./Header.module.scss";
 import {txt} from "shared/assets/txt/txt";
-import {Loading} from "../../../../shared/ui/Loading";
+import {Loading} from "../../../../../shared/ui/Loading";
 
 interface HeaderProps {
     avatarUrl: string;

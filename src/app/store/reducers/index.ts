@@ -1,10 +1,12 @@
-import profile from "pages/public/Main/store";
-import user from "./user";
 import system from "./system";
+import user from "./user";
+import profile from "pages/public/Profile/store";
+import projects from "widgets/ProjectsList/store";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    profile,
+    system,
     user,
-    system
+    profile,
+    projects
 }

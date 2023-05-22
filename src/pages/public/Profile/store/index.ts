@@ -1,5 +1,5 @@
 import {ProfileAction, ProfileActionsEnum, ProfileState} from "./types";
-import {Profile} from "../../../../entities/profile";
+import {Profile} from "../../../../entities/profile/profile";
 
 const initialState: ProfileState = {
     profile: {} as Profile,

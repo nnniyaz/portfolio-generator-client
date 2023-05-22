@@ -4,9 +4,9 @@ import {txt} from "shared/assets/txt/txt";
 import {isEmpty} from "lodash";
 import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
 import {Loading} from "shared/ui/Loading";
-import classes from "./Main.module.scss";
+import classes from "./Profile.module.scss";
 
-export function Main() {
+export function Profile() {
     const {currentLang} = useTypedSelector(state => state.system);
     const {profile, isLoadingGetProfile} = useTypedSelector(state => state.profile);
 
@@ -23,7 +23,7 @@ export function Main() {
             {
                 isLoadingGetProfile
                     ?
-                    <Loading/>
+                    <Loading height={"300px"}/>
                     :
                     <div className={classes.container}>
 

@@ -1,0 +1,149 @@
+{
+  "data": {
+    "projectsCount": 10,
+    "projects": [
+      {
+        "id": "1",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "2",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "3",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "4",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "5",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "6",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "7",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "8",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "9",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      },
+      {
+        "id": "10",
+        "previewImageUrl": "",
+        "title": {
+          "RU": "Рефакторинг на максималках",
+          "EN": "Refactor Like a Superhero"
+        },
+        "description": {
+          "RU": "Бесплатная онлайн-книга о том, как эффективно и без боли рефакторить код.",
+          "EN": "Online book on how to refactor code efficiently and without pain."
+        },
+        "createdAt": "2023-05-22T21:14:08.434Z",
+        "updatedAt": "2023-05-22T21:14:08.434Z"
+      }
+    ]
+  },
+  "success": true,
+  "message": "OK"
+}

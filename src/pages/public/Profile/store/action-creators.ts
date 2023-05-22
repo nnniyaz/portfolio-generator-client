@@ -3,7 +3,7 @@ import {AppDispatch} from "app/store";
 import ProfileApi from "../api";
 import {isEmpty} from "lodash";
 import {log} from "shared/lib/utils/log";
-import {Profile} from "entities/profile";
+import {Profile} from "entities/profile/profile";
 
 export const ProfileActionCreators = {
     setProfile: (profile: Profile): SetProfile => ({

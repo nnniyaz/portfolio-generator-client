@@ -1,9 +1,6 @@
-@import "../../app/App";
-@import "../../../widgets/PublicLayout/PublicLayout.module";
+@import "src/app";
 
 .loading__wrapper {
-  width: 100%;
-  height: $layout-min-height;
   display: flex;
   justify-content: center;
   align-items: center;
