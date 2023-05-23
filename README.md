@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+## Frontend Feature Sliced Design (FSD)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React + Typescript project built by using FSD architecture.
 
-## Available Scripts
+> This project is still in progress, therefore information of this file will be completed soon.
 
-In the project directory, you can run:
+- Here will be a link to the working app
+- Here will be a link to the post about it
+- Here will be a link to the Backend repo
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Things to Consider](#things-to-consider)
+  - [Shared Kernel](#shared-kernel)
+  - [Base URL](#base-url)
+- [Shared](#shared)
+- [Entities](#entities)
+- [Features](#features)
+- [Widgets](#widgets)
+- [Pages](#pages)
+- [Processes](#processes)
+- [App](#app)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<a name="things-to-consider"></a>
+## Things to Consider
 
-### `npm test`
+There are a few compromises and simplifications in the code that are worth to be mentioned.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a name="shared-kernel"></a>
+### Shared Kernel
 
-### `npm run build`
+Shared Kernel is the code and data on which any modules can depend, but only if this dependency would not increase
+coupling. More details about the limitations and application are well described in the article ["DDD, Hexagonal, Onion,
+Clean, CQRS, ... How I put it all together"](https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In this application, the shared kernel includes global type annotations that can be accessed anywhere in the app and by
+any module. Such types are collected in [`shared-kernel.d.ts`](https://github.com/nnniyaz/blog/blob/master/src/shared-kernel.d.ts).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a name="base-url"></a>
+### Base URL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In your tsconfig.json file, you can add `"baseUrl": "src",` to the compilerOptions. This will allow you to import files
+from the src folder without using relative paths. 
 
-### `npm run eject`
+For example, you can import `components/Button` instead of `../../components/Button`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Shared
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Will be described soon.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Entities
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> Will be described soon.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Will be described soon.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Widgets
+
+> Will be described soon.
+
+## Pages
+
+> Will be described soon.
+
+## Processes
+
+> Will be described soon.
+
+## App
+
+> Will be described soon.
