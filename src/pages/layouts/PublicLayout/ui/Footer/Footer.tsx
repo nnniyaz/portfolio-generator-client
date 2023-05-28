@@ -2,14 +2,14 @@ import React from "react";
 import {styles} from "shared/assets/styles/styles";
 import classes from "./Footer.module.scss";
 
-export function Footer({email}: { email: string }) {
+export function Footer({email, establishedYear}: { email: string, establishedYear: number }) {
     return (
         <div className={classes.footer}>
-            <div className={styles.subParagraphLink}>
+            <a className={styles.subParagraphLink} href={`mailto:${email}`}>
                 {email}
-            </div>
+            </a>
             <div className={styles.subParagraph}>
-                2023
+                {establishedYear}
             </div>
         </div>
     )

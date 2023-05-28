@@ -1,9 +1,9 @@
 import React from "react";
-import {styles} from "shared/assets/styles/styles";
-import {txt} from "shared/assets/txt/txt";
 import {isEmpty} from "lodash";
-import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
+import {txt} from "shared/assets/txt/txt";
 import {Loading} from "shared/ui/Loading";
+import {styles} from "shared/assets/styles/styles";
+import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
 import classes from "./Profile.module.scss";
 
 export function Profile() {

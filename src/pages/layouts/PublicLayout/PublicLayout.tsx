@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
-import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
-import {useActions} from "shared/lib/hooks/useActions";
 import {isEmpty} from "lodash";
-import {txt} from "shared/assets/txt/txt";
 import {Outlet} from "react-router-dom";
+import {txt} from "shared/assets/txt/txt";
+import {useActions} from "shared/lib/hooks/useActions";
+import {useTypedSelector} from "shared/lib/hooks/useTypedSelector";
 import {Header} from "./ui/Header";
 import {Footer} from "./ui/Footer";
 import classes from "./PublicLayout.module.scss";
@@ -14,9 +14,10 @@ export function PublicLayout() {
     const {changeCurrentLang, getProfile} = useActions();
 
     const profileData = {
-        avatarUrl: isEmpty(profile?.avatarUrl) ? "" : profile.avatarUrl,
+        avatarUrl: !profile?.avatarUrl ? "" : profile.avatarUrl,
         fullName: isEmpty(profile?.fullName) ? txt.some_person[currentLang] : profile.fullName[currentLang],
-        email: isEmpty(profile?.email) ? txt.some_cool_email[currentLang] : profile.email,
+        email: !profile?.email ? txt.some_cool_email[currentLang] : profile.email,
+        establishedYear: !profile?.establishedYear ? 2023 : profile.establishedYear,
     }
 
     useEffect(() => {
@@ -40,7 +41,7 @@ export function PublicLayout() {
             <div className={classes.content}>
                 <Outlet/>
             </div>
-            <Footer email={profile.email}/>
+            <Footer email={profile.email} establishedYear={profileData.establishedYear}/>
         </div>
     );
 }
