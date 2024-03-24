@@ -4,6 +4,7 @@ A React + Typescript project built by using FSD architecture
 
 > This project is still in progress, therefore information of this file will be completed soon.
 
+
 - Here will be a link to the working app
 - Here will be a link to the post about it
 - Here will be a link to the Backend repo
